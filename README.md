@@ -7,12 +7,13 @@ A containerized [Percona XTraDB](https://www.percona.com/software/percona-server
 
 ```
 # Run XTraDB
-docker run -it --name xtradb usman/xtradb 
+docker run -it --name xtradb -e MYSQL_ROOT_PASSWORD=XXXX usman/xtradb 
 
 # You will be in an interactive prompt
 # modify / create /etc/my.cnf 
 /etc/init.d/mysql bootstrap-pxc
-
+# run setup sql
+mysql -u root < /tmp/mysql-setup.sql
 
 ## Building
 
