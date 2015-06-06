@@ -14,6 +14,7 @@ docker run -it --name xtradb -e MYSQL_ROOT_PASSWORD=XXXX usman/xtradb
 /etc/init.d/mysql bootstrap-pxc
 # run setup sql
 mysql -u root < /tmp/mysql-setup.sql
+```
 
 ## Building
 
