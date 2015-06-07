@@ -8,6 +8,6 @@ COPY entrypoint.sh /bin/entrypoint.sh
 COPY my.cnf /etc/my.cnf
 
 VOLUME /data
-EXPOSE 3306 4444 4567 4568
+EXPOSE 3306 4444 4567 4568 873
 
 CMD /bin/entrypoint.sh
